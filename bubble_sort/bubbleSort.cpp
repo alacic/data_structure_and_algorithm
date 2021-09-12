@@ -13,7 +13,7 @@ void printArray(int arr[], int arr_size);
 
 int main()
 {
-    int arr[] = {1, 5, 9, 7, 8};
+    int arr[]{1, 5, 9, 7, 8, 12, 5, 5, 5, 2};
     cout << "Before sorted, arr is ";
     int n = sizeof(arr) / sizeof(arr[0]);
     printArray(arr, n);
