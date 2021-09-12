@@ -29,12 +29,12 @@ void insertSort(int arr[], int arr_size)
         for (int j = i; j >= 0; j--)
         {
             if (arr[j - 1] > value)
-            {
                 arr[j] = arr[j - 1];
-                arr[j - 1] = value;
-            }
             else
+            {
+                arr[j] = value;
                 break;
+            }
         }
     }
 }
@@ -48,7 +48,7 @@ void printArray(int arr[], int arr_size)
     cout << arr[arr_size - 1] << endl;
 }
 
-// answer good than mine at https://www.geeksforgeeks.org/insertion-sort/
+// answer at https://www.geeksforgeeks.org/insertion-sort/
 // void insertSort(int arr[], int arr_size)
 // {
 //     int i, key, j;
